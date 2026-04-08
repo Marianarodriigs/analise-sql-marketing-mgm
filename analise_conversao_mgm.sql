@@ -30,5 +30,5 @@ Clientes com alta taxa de conversão devem receber benefícios exclusivos do pro
 Obs: 
 Eu usei o NULLIF para evitar o erro de divisão por zero. Como estou calculando uma taxa (divisão), se um cliente não tiver nenhuma indicação,
 o divisor seria zero e o banco de dados travaria. O NULLIF transforma esse zero em vazio (Nulo), fazendo com que o cálculo ignore esse erro 
-e o script continue rodando.
+e continue rodando.
 */
