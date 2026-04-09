@@ -6,7 +6,7 @@ CREATE TABLE clientes (
     id_cliente INT PRIMARY KEY,
     nome VARCHAR(100),
     data_cadastro DATE,
-    plano_atual VARCHAR(50) -- Ex: 'Premium', 'Standard'
+    plano_atual VARCHAR(50) /* Ex: 'Premium', 'Standard' */
 );
 
 
