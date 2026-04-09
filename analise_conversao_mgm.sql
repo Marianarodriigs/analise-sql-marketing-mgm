@@ -8,10 +8,10 @@ PASSO 1: Selecionamos os clientes que indicaram (Referrers) e os amigos que fora
 SELECT c.nome AS cliente_indicador,
     COUNT(i.id_indicado) AS total_indicacoes_feitas,
     
-    --Aqui contamos apenas as indicações que viraram conversão
+    /* Aqui contamos apenas as indicações que viraram conversão */
     SUM(CASE WHEN i.status_venda = 'Concluída' THEN 1 ELSE 0 END) AS indicacoes_convertidas,
     
-    -- E então calculamos a Taxa de Conversão de cada cliente
+    /* E então calculamos a Taxa de Conversão de cada cliente */
     ROUND(
         (SUM(CASE WHEN i.status_venda = 'Concluída' THEN 1 ELSE 0 END) * 100.0) / 
         NULLIF(COUNT(i.id_indicado), 0), 2
