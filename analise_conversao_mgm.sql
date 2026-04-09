@@ -2,7 +2,7 @@
 /*
 Projeto: Análise de Conversão e Performance de Indicações (MGM)
 Objetivo: Identificar a taxa de conversão de leads indicados e o perfil dos indicadores.
-PASSO 1: Selecionamos os clientes que indicaram (Referrers) e os amigos que foram indicados (Leads).
+PASSO 2: Selecionamos os clientes que indicaram (Referrers) e os amigos que foram indicados (Leads).
 */
 
 SELECT c.nome AS cliente_indicador,
